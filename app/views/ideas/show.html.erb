@@ -1,3 +1,5 @@
+<p id="notice"><%= notice %></p>
+
 <div class="row">
   <div class="col-md-9">
     <%= image_tag(@idea.picture_url, width: '100%') if @idea.picture.present? %>
@@ -13,25 +15,3 @@
     </p>
   </div>
 </div>
-
-<!--
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @idea.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @idea.description %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
-</p>
-
-<%= link_to 'Edit', edit_idea_path(@idea) %> |
-<%= link_to 'Back', ideas_path %>
--->
